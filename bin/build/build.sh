@@ -70,7 +70,7 @@ create_htaccess() {
 
     insert_header "security" "$file"
     insert_line "" "$file"
-    insert_file_comment_out "src/security/x-frame-option.conf" "$file"
+    insert_file "src/security/x-frame-option.conf" "$file"
     insert_line "" "$file"
     insert_file_comment_out "src/security/content-security-policy.conf" "$file"
     insert_line "" "$file"
